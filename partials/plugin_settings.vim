@@ -8,8 +8,16 @@ let g:airline_theme = 'gruvbox'
 
 
 " ALE
-let g:ale_linters = {'python': ['flake8'], 'javascript': ['eslint']}
-let g:ale_fixers = {'python': ['yapf'], 'haskell': ['stylish-haskell']}
+let g:ale_linters = {
+    \ 'python': ['flake8'],
+    \ 'javascript': ['eslint'],
+    \ 'haskell': ['hlint']
+\ }
+
+let g:ale_fixers = {
+    \ 'python': ['yapf'],
+    \ 'haskell': ['stylish-haskell']
+\ }
 
 
 " hiPairs
