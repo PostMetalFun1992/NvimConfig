@@ -27,8 +27,16 @@ Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 
-" Autocomplte
+" Text manupulation
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+
+" Autocomplete | Linting | IDE features
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+Plug 'zchee/deoplete-jedi'
+
+Plug 'w0rp/ale'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
@@ -39,16 +47,5 @@ Plug 'elzr/vim-json'
 " JS
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-
-" Haskell
-
-" Python
-Plug 'zchee/deoplete-jedi'
-
-" Other
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
 
 call plug#end()
