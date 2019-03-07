@@ -8,7 +8,7 @@ let g:airline_theme = 'gruvbox'
 
 " ALE
 let g:ale_linters = {
-    \ 'python': ['flake8'],
+    \ 'python': ['flake8', 'mypy'],
     \ 'javascript': ['eslint'],
     \ 'haskell': ['hlint']
 \ }
@@ -38,6 +38,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 " Deoplete
+let g:python3_host_prog = "/usr/bin/python3"
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#disable_auto_complete = 1
 
