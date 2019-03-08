@@ -16,6 +16,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/hiPairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Colorschemes
+Plug 'nanotech/jellybeans.vim'
 Plug 'morhetz/gruvbox'
 
 " Git

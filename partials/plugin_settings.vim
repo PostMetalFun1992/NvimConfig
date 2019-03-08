@@ -3,8 +3,8 @@
 "=========================================
 
 " Gruvbox
-colorscheme gruvbox
-let g:airline_theme = 'gruvbox'
+colorscheme jellybeans
+let g:airline_theme = 'jellybeans'
 
 " ALE
 let g:ale_linters = {
