@@ -2,9 +2,13 @@
 " Basic settings
 "=========================================
 
+" set system clipboard as default
 set clipboard=unnamed
+
+" turn off vi compatability
 set nocompatible
 
+" turn off bars
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
@@ -15,10 +19,16 @@ set t_Co=256
 syntax on
 set number
 
+" converting tabs to spaces
 set expandtab
+
 set shiftwidth=4
 set softtabstop=4
 
+" turn off swap/backup files
 set nobackup
 set nowritebackup
 set noswapfile
+
+set splitright
+set splitbelow

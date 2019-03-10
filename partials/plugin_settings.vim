@@ -18,7 +18,6 @@ let g:ale_fixers = {
     \ 'haskell': ['stylish-haskell']
 \ }
 
-
 " hiPairs
 let g:hiPairs_enable_matchParen = 0
 
