@@ -1,6 +1,7 @@
 "=========================================
 " Keybindings
 "=========================================
+
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>

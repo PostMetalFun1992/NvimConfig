@@ -36,6 +36,9 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+" vim-lsp
+let g:lsp_diagnostics_enabled = 0
+
 " Deoplete
 let g:python3_host_prog = "/usr/bin/python3"
 let g:deoplete#enable_at_startup = 1
@@ -50,14 +53,15 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
 call deoplete#custom#option('ignore_sources', {'_': ['buffer', 'around']})
 
-" Deoplete-jedi
-let g:deoplete#sources#jedi#enable_typeinfo = 1
-
-" Deoplete-tern
-let g:deoplete#sources#ternjs#docs = 1
-let g:deoplete#sources#ternjs#types = 1
-let g:deoplete#sources#ternjs#filetypes = [
-	\ 'jsx',
-	\ 'javascript.jsx',
-	\ 'javascript'
-	\ ]
+" deoplete-vim lsp
+if (executable('pyls'))
+    let s:pyls_path = fnamemodify(g:python3_host_prog, ':h') . '/'. 'pyls'
+    augroup LspPython
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+      \ 'name': 'pyls',
+      \ 'cmd': {server_info->['pyls']},
+      \ 'whitelist': ['python']
+      \ })
+    augroup END
+endif
