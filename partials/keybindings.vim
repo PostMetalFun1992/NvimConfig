@@ -1,6 +1,10 @@
 "=========================================
 " Keybindings
 "=========================================
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop> 
 
 set backspace=indent,eol,start
 
