@@ -32,3 +32,7 @@ set noswapfile
 
 set splitright
 set splitbelow
+
+" allow per-project confs
+set exrc
+set secure

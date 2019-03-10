@@ -6,18 +6,6 @@
 colorscheme jellybeans
 let g:airline_theme = 'jellybeans'
 
-" ALE
-let g:ale_linters = {
-    \ 'python': ['flake8', 'mypy'],
-    \ 'javascript': ['eslint'],
-    \ 'haskell': ['hlint']
-\ }
-
-let g:ale_fixers = {
-    \ 'python': ['yapf'],
-    \ 'haskell': ['stylish-haskell']
-\ }
-
 " hiPairs
 let g:hiPairs_enable_matchParen = 0
 
@@ -36,6 +24,9 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+" Ale
+let g:ale_linters_explicit = 1
+
 " vim-lsp
 let g:lsp_diagnostics_enabled = 0
 
@@ -52,16 +43,3 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " disable autocompletion for comments and strings
 call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
 call deoplete#custom#option('ignore_sources', {'_': ['buffer', 'around']})
-
-" deoplete-vim lsp
-if (executable('pyls'))
-    let s:pyls_path = fnamemodify(g:python3_host_prog, ':h') . '/'. 'pyls'
-    augroup LspPython
-        autocmd!
-        autocmd User lsp_setup call lsp#register_server({
-      \ 'name': 'pyls',
-      \ 'cmd': {server_info->['pyls']},
-      \ 'whitelist': ['python']
-      \ })
-    augroup END
-endif
