@@ -1,6 +1,6 @@
 " Ale
-let g:ale_linters = { 'python': ['flake8', 'mypy'] }
-let g:ale_fixers = { 'python': ['yapf'] }
+let g:ale_linters.python = ['pyls']
+let g:ale_fixers.python = ['yapf']
 
 " deoplete-vim lsp
 if (executable('pyls'))

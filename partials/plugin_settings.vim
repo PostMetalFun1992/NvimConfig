@@ -25,7 +25,11 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 " Ale
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
 let g:ale_linters_explicit = 1
+let g:ale_linters = {}
+let g:ale_fixers = {}
 
 " vim-lsp
 let g:lsp_diagnostics_enabled = 0
