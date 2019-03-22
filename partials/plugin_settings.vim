@@ -22,8 +22,6 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.db$', '\.sqlite$']
-
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
@@ -31,11 +29,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.branch = '⎇ '
 
 " Ale
 let g:ale_sign_error = '✖'

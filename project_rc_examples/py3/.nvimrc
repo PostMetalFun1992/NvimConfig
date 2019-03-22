@@ -14,3 +14,6 @@ if (executable('pyls'))
       \ })
     augroup END
 endif
+
+" NERDTree
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.db$', '\.mypy_cache$']
