@@ -1,4 +1,5 @@
-" Ale
+let g:NERDTreeIgnore = ['.git', '\.pyc$', '__pycache__', '\.db$', '\.mypy_cache$']
+
 let g:ale_linters.python = ['pyls']
 let g:ale_fixers.python = ['yapf']
 
@@ -14,6 +15,3 @@ if (executable('pyls'))
       \ })
     augroup END
 endif
-
-" NERDTree
-let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.db$', '\.mypy_cache$']
