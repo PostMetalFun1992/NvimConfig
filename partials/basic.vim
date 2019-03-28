@@ -36,3 +36,8 @@ set splitbelow
 " allow per-project confs
 set exrc
 set secure
+
+" cursorline
+color desert
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey40
