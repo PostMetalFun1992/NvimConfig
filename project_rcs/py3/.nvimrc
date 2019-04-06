@@ -15,3 +15,6 @@ if (executable('pyls'))
       \ })
     augroup END
 endif
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
