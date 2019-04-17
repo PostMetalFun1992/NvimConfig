@@ -20,6 +20,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Colorschemes
 Plug 'nanotech/jellybeans.vim'
 Plug 'morhetz/gruvbox'
+Plug 'aonemd/kuroi.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'

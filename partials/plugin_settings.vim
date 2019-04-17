@@ -2,8 +2,8 @@
 " Plugin Settings
 "=========================================
 
-" Gruvbox
-colorscheme jellybeans
+set background=dark
+colorscheme kuroi
 let g:airline_theme = 'jellybeans'
 
 " hiPairs
