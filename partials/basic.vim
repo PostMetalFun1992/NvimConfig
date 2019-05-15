@@ -41,3 +41,6 @@ set secure
 color desert
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
+
+" per-file-extension settings
+filetype plugin on
