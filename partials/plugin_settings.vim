@@ -3,7 +3,7 @@
 "=========================================
 
 set background=dark
-colorscheme kuroi
+colorscheme jellybeans
 let g:airline_theme = 'jellybeans'
 
 " hiPairs
@@ -37,11 +37,7 @@ let g:ale_linters_explicit = 1
 let g:ale_linters = {}
 let g:ale_fixers = {}
 
-" vim-lsp
-let g:lsp_diagnostics_enabled = 0
-
 " Deoplete
-let g:python3_host_prog = "/usr/bin/python3"
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#disable_auto_complete = 1
 

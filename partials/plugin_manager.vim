@@ -35,13 +35,11 @@ Plug 'godlygeek/tabular'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
-" Autocomplete | Linting | IDE features
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-
+" Autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.0' }
-Plug 'lighttiger2505/deoplete-vim-lsp'
+Plug 'deoplete-plugins/deoplete-jedi'
 
+" Linting
 Plug 'w0rp/ale'
 
 " Markdown
