@@ -3,8 +3,8 @@
 "=========================================
 
 set background=dark
-colorscheme jellybeans
-let g:airline_theme = 'jellybeans'
+colorscheme gruvbox
+let g:airline_theme = 'gruvbox'
 
 " hiPairs
 let g:hiPairs_enable_matchParen = 0
@@ -28,6 +28,7 @@ autocmd StdinReadPre * let s:std_in=1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
+let g:airline_powerline_fonts = 1
 
 " Ale
 let g:ale_sign_error = '✖'
