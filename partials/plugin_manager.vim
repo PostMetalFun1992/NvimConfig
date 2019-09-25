@@ -43,6 +43,7 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 Plug 'junegunn/fzf'
+Plug 'w0rp/ale'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
