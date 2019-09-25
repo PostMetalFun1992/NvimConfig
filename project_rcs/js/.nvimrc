@@ -1,1 +1,1 @@
-let g:NERDTreeIgnore = ['.git', '.cache', 'node_modules']
+let g:NERDTreeIgnore = ['\.git$', '\.cache$', '\node_modules$']
