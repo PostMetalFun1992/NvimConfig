@@ -35,7 +35,7 @@ let g:LanguageClient_diagnosticsEnable = 1
 let g:LanguageClient_useVirtualText = 0
 
 " Deoplete
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 0
 let g:deoplete#disable_auto_complete = 1
 
 " auto - close preview
