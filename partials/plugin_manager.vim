@@ -36,16 +36,13 @@ Plug 'godlygeek/tabular'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
-" Autocomplete
+" Autocomplete / Linting
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.0' }
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
 Plug 'junegunn/fzf'
-
-" Linting
-Plug 'w0rp/ale'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
