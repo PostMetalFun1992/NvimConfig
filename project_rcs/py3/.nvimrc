@@ -7,8 +7,10 @@ autocmd FileType python call PythonSpecificSettings()
 let g:ale_linters.python = ['flake8', 'mypy']
 let g:ale_fixers.python = ['yapf', 'isort']
 
-" Deoplete
-let g:python3_host_prog = '/usr/bin/python3.5'
+" LanguageClient
+let g:LanguageClient_serverCommands = {
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ }
 
 " NERDTree
 let g:NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.db$', '\.mypy_cache$', '\.pytest_cache$', '\.git$']

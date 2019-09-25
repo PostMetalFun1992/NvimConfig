@@ -37,6 +37,9 @@ let g:ale_linters_explicit = 1
 let g:ale_linters = {}
 let g:ale_fixers = {}
 
+" LanguageClient
+let g:LanguageClient_diagnosticsEnable = 0
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#disable_auto_complete = 1
