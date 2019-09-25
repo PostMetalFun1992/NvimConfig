@@ -30,6 +30,13 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_powerline_fonts = 1
 
+" Ale
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
+let g:ale_linters_explicit = 1
+let g:ale_linters = {}
+let g:ale_fixers = {}
+
 " LanguageClient
 let g:LanguageClient_diagnosticsEnable = 0
 let g:LanguageClient_useVirtualText = 0

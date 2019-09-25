@@ -3,6 +3,11 @@ function PythonSpecificSettings()
 endfunction
 autocmd FileType python call PythonSpecificSettings()
 
+" Ale
+let g:ale_linters = {'python': ['flake8', 'mypy']}
+let g:ale_fixers = {'python': ['yapf', 'isort']}
+nnoremap ff :ALEFix<CR>
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 inoremap <expr> <C-Space>  deoplete#mappings#manual_complete()
@@ -10,21 +15,16 @@ inoremap <expr> <C-Space>  deoplete#mappings#manual_complete()
 " LanguageClient
 let g:LanguageClient_serverCommands = {'python': ['/usr/local/bin/pyls']}
 
-let g:LanguageClient_loadSettings = 1
-let g:LanguageClient_diagnosticsEnable = 1
-let g:LanguageClient_settingsPath = './settings.json'
+"let g:LanguageClient_loadSettings = 1
+"let g:LanguageClient_diagnosticsEnable = 1
+"let g:LanguageClient_settingsPath = './settings.json'
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> ff :call LanguageClient#textDocument_formatting()<CR>
-
-" Ale
-" let g:ale_linters.python = ['flake8', 'mypy']
-" let g:ale_fixers.python = ['yapf', 'isort']
-" nnoremap ff :ALEFix<CR>
+" nnoremap <silent> ff :call LanguageClient#textDocument_formatting()<CR>
 
 " NERDTree
 let g:NERDTreeIgnore = [
