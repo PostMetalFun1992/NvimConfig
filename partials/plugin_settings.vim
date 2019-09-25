@@ -31,7 +31,7 @@ endif
 let g:airline_powerline_fonts = 1
 
 " LanguageClient
-let g:LanguageClient_diagnosticsEnable = 1
+let g:LanguageClient_diagnosticsEnable = 0
 let g:LanguageClient_useVirtualText = 0
 
 " Deoplete

@@ -11,6 +11,7 @@ inoremap <expr> <C-Space>  deoplete#mappings#manual_complete()
 let g:LanguageClient_serverCommands = {'python': ['/usr/local/bin/pyls']}
 
 let g:LanguageClient_loadSettings = 1
+let g:LanguageClient_diagnosticsEnable = 1
 let g:LanguageClient_settingsPath = './settings.json'
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
