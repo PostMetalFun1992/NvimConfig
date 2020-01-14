@@ -45,9 +45,6 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'junegunn/fzf'
 Plug 'w0rp/ale'
 
-" Markdown
-Plug 'plasticboy/vim-markdown'
-
 " JSON
 Plug 'elzr/vim-json'
 
