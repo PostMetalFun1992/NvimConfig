@@ -3,15 +3,11 @@
 "=========================================
 
 set background=dark
-colorscheme gruvbox
-let g:airline_theme = 'gruvbox'
+colorscheme jellybeans
+let g:airline_theme = 'jellybeans'
 
 " hiPairs
 let g:hiPairs_enable_matchParen = 0
-
-" vim-markdown
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_conceal = 0
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
@@ -28,7 +24,7 @@ autocmd StdinReadPre * let s:std_in=1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " Ale
 let g:ale_sign_error = '✖'
