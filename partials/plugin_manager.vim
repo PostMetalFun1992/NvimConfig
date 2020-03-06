@@ -20,7 +20,6 @@ Plug 'vim-airline/vim-airline-themes'
 " Colorschemes
 Plug 'nanotech/jellybeans.vim'
 Plug 'morhetz/gruvbox'
-Plug 'aonemd/kuroi.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -40,7 +39,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.0' }
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
-    \ }
+\ }
 
 " JSON
 Plug 'elzr/vim-json'

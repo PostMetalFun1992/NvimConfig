@@ -1,5 +1,5 @@
 function PythonSpecificSettings()
-  setlocal colorcolumn=80
+    setlocal colorcolumn=80
 endfunction
 autocmd FileType python call PythonSpecificSettings()
 
