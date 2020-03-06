@@ -47,6 +47,6 @@ Plug 'elzr/vim-json'
 
 " JS
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
