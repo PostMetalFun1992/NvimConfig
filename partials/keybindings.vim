@@ -16,7 +16,6 @@ nnoremap tt :tabnew<CR>
 nnoremap t, :tabprevious<CR>
 nnoremap t. :tabnext<CR>
 
-nmap <C-n> :TagbarToggle<CR>
 nmap <C-t> :NERDTree<CR>
 
 noremap <C-h> :set hlsearch! hlsearch?<CR>

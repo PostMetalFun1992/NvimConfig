@@ -28,21 +28,20 @@ Plug 'tpope/vim-fugitive'
 
 " Code naviagion
 Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
-Plug 'godlygeek/tabular'
 
 " Text manupulation
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Autocomplete / Linting
+Plug 'w0rp/ale'
+Plug 'junegunn/fzf'
+
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.0' }
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'junegunn/fzf'
-Plug 'w0rp/ale'
 
 " JSON
 Plug 'elzr/vim-json'
