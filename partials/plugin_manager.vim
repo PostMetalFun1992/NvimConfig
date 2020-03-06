@@ -31,7 +31,6 @@ Plug 'scrooloose/nerdtree'
 
 " Text manupulation
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
 
 " Autocomplete / Linting
 Plug 'w0rp/ale'
