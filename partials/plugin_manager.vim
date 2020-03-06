@@ -28,7 +28,6 @@ Plug 'tpope/vim-fugitive'
 
 " Code naviagion
 Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 
