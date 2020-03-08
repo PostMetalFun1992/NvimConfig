@@ -24,7 +24,7 @@ autocmd StdinReadPre * let s:std_in=1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline_extensions = ['branch']
 
 " Ale
