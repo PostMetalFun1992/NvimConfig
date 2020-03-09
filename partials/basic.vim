@@ -46,3 +46,5 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 filetype plugin on
 
 set signcolumn=yes
+
+set encoding=UTF-8

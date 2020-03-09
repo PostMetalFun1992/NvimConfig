@@ -16,6 +16,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/hiPairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 
 " Colorschemes
 Plug 'nanotech/jellybeans.vim'
