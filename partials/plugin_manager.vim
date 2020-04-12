@@ -34,13 +34,6 @@ Plug 'jiangmiao/auto-pairs'
 
 " Autocomplete / Linting
 Plug 'w0rp/ale'
-Plug 'junegunn/fzf'
-
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.0' }
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-\ }
 
 " JSON
 Plug 'elzr/vim-json'

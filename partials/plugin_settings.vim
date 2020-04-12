@@ -33,20 +33,3 @@ let g:ale_sign_warning = '⚠'
 let g:ale_linters_explicit = 1
 let g:ale_linters = {}
 let g:ale_fixers = {}
-
-" LanguageClient
-let g:LanguageClient_diagnosticsEnable = 0
-let g:LanguageClient_useVirtualText = 0
-
-" Deoplete
-let g:deoplete#enable_at_startup = 0
-let g:deoplete#disable_auto_complete = 1
-
-" auto - close preview
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-" press tab for scroll through completetions list
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-" disable autocompletion for comments and strings
-call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
-call deoplete#custom#option('ignore_sources', {'_': ['buffer', 'around']})
