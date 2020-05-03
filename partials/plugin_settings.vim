@@ -33,3 +33,6 @@ let g:ale_sign_warning = '⚠'
 let g:ale_linters_explicit = 1
 let g:ale_linters = {}
 let g:ale_fixers = {}
+
+" Polyglot
+let g:polyglot_disabled = ['markdown']

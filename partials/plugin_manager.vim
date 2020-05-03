@@ -26,8 +26,9 @@ Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" Code naviagion
+" Code
 Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
 
 " Text manupulation
 Plug 'jiangmiao/auto-pairs'
