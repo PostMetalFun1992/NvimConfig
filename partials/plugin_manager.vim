@@ -25,7 +25,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'morhetz/gruvbox'
 
 " Git
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
 " Code
