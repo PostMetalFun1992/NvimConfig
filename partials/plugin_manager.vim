@@ -17,7 +17,6 @@ Plug 'Yggdroot/hiPairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 
 " Colorschemes
@@ -37,10 +36,6 @@ Plug 'jiangmiao/auto-pairs'
 
 " Autocomplete / Linting
 Plug 'w0rp/ale'
-
-" Clojure
-Plug 'guns/vim-sexp',    {'for': 'clojure'}
-Plug 'liquidz/vim-iced', {'for': 'clojure'}
 
 " JSON
 Plug 'elzr/vim-json'
