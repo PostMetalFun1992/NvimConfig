@@ -17,6 +17,7 @@ Plug 'Yggdroot/hiPairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'luochen1990/rainbow'
 
 " Colorschemes
 Plug 'nanotech/jellybeans.vim'
@@ -29,12 +30,11 @@ Plug 'tpope/vim-fugitive'
 " Code
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
-
-" Text manupulation
 Plug 'jiangmiao/auto-pairs'
 
 " Autocomplete / Linting
 Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " JSON
 Plug 'elzr/vim-json'

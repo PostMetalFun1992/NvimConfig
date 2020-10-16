@@ -44,3 +44,14 @@ let g:rainbow_conf = {
         \ 'nerdtree': 0,
     \ }
 \}
+
+" Coc.nvim
+" Tab for triggering completion
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" CTRL + Space for triggering completion
+inoremap <silent><expr> <c-space> coc#refresh()

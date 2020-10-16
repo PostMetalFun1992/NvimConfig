@@ -48,3 +48,6 @@ filetype plugin on
 set signcolumn=yes
 
 set encoding=UTF-8
+
+set updatetime=300
+set shortmess+=c
