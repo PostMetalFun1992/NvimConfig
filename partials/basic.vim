@@ -16,6 +16,10 @@ set guioptions-=L
 
 set t_Co=256
 
+if (has("termguicolors"))
+ set termguicolors
+endif
+
 syntax on
 set number
 
@@ -51,3 +55,6 @@ set encoding=UTF-8
 
 set updatetime=300
 set shortmess+=c
+
+" Polyglot
+let g:polyglot_disabled = ['markdown']

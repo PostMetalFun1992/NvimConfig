@@ -12,23 +12,27 @@ endif
 call plug#begin()
 
 " UI Tweaks
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+
 Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/hiPairs'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
+
 Plug 'luochen1990/rainbow'
 
 " Colorschemes
 Plug 'nanotech/jellybeans.vim'
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Git
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
 " Code
-Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 

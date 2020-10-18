@@ -3,8 +3,8 @@
 "=========================================
 
 set background=dark
-colorscheme jellybeans
-let g:airline_theme = 'jellybeans'
+colorscheme dracula
+let g:airline_theme = 'dracula'
 
 " hiPairs
 let g:hiPairs_enable_matchParen = 0
@@ -33,9 +33,6 @@ let g:ale_sign_warning = '⚠'
 let g:ale_linters_explicit = 1
 let g:ale_linters = {}
 let g:ale_fixers = {}
-
-" Polyglot
-let g:polyglot_disabled = ['markdown']
 
 " Rainbow
 let g:rainbow_active = 1
