@@ -43,6 +43,11 @@ let g:rainbow_conf = {
 \}
 
 " Coc.nvim
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 " Tab for triggering completion
 inoremap <silent><expr> <TAB>
   \ pumvisible() ? "\<C-n>" :
