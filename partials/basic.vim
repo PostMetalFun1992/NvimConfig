@@ -56,5 +56,4 @@ set encoding=UTF-8
 set updatetime=300
 set shortmess+=c
 
-" Polyglot
-let g:polyglot_disabled = ['markdown']
+let g:python3_host_prog = '/usr/bin/python3'

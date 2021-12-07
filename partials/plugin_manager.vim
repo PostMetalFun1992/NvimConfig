@@ -2,6 +2,9 @@
 " Plugin Manager
 "=========================================
 
+" Polyglot
+let g:polyglot_disabled = ['markdown']
+
 " Auto Vim-plug install
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -38,13 +41,13 @@ Plug 'jiangmiao/auto-pairs'
 
 " Autocomplete / Linting
 Plug 'w0rp/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " JSON
 Plug 'elzr/vim-json'
 
 " JS
-Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'pangloss/vim-javascript'
+" Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()

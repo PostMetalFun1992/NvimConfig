@@ -3,8 +3,8 @@
 "=========================================
 
 set background=dark
-colorscheme dracula
-let g:airline_theme = 'dracula'
+colorscheme gruvbox
+let g:airline_theme = 'gruvbox'
 
 " hiPairs
 let g:hiPairs_enable_matchParen = 0
